@@ -8,6 +8,7 @@ export function reducerAdminEdit(state, action) {
     }else if(action.type === 'ADD PRODUCT'){
         let newArr = [...state.products]
         newArr.push(action.payload)
+        console.log(action.payload)
         return {...state, products: newArr}
     }
     

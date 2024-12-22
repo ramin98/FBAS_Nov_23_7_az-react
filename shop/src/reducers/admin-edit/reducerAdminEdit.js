@@ -5,7 +5,7 @@ export const initialObjectAdminEdit = {
   ids: [],
 };
 
-export function reducerAdminEdit(state = initialObjectAdminEdit, action) {
+export function reducerAdminEdit(state, action) {
   if (action.type === "GET PRODUCTS") {
     return { ...state, products: action.payload };
   } else if (action.type === "ADD PRODUCT") {
